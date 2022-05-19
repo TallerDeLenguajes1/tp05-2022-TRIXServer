@@ -1,6 +1,7 @@
 ﻿Console.Clear();
 Console.WriteLine("Hola Mundo");
 
+
 public class pixel
 {
     private int x;
@@ -29,5 +30,4 @@ public class pixel
         x = 0;
         y = 0;
     }
-
 }
