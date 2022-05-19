@@ -29,5 +29,5 @@ public class pixel
         x = 0;
         y = 0;
     }
-    
+
 }
