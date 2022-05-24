@@ -1,5 +1,6 @@
 ﻿using System;
 
+Console.Clear();
 Console.Write("Ingrese un numero: ");
 string numeroIngresado = Console.ReadLine();
 
@@ -12,8 +13,3 @@ for (int i = numeroArray.Length; i > 0 ; i--)
 {
     Console.Write(numeroArray[i - 1]);
 }
-
-
-
-
-

@@ -1,7 +1,0 @@
-# ignorar extensiones
-*.exe
-
-#ignorar directorio
-bin/
-obj/
-.vscode/
