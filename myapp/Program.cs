@@ -57,5 +57,3 @@ namespace ejercicio2
         }
     }
 }
-
-
