@@ -50,6 +50,7 @@ namespace ejercicio2
                     }
                     Console.WriteLine("--");
                     Console.WriteLine("El resultado es: " + resultado);
+                    Console.Write("Presione una tecla...");
                     Console.Read();
 
                 }
