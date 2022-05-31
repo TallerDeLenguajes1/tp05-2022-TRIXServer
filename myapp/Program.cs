@@ -32,19 +32,8 @@ namespace ejercicio3
 
             Console.WriteLine("--");
 
-            if (numero1 > numero2)
-            {
-                Console.WriteLine($"El mayor es: \t" + numero1);
-
-            }
-            else if (numero2 > numero1)
-            {
-                Console.WriteLine($"El mayor es: \t" + numero2);
-            }
-            else
-            {
-                Console.WriteLine("Los numeros son iguales");
-            }
+            Console.WriteLine($"El maximo de los dos es: \t" + Math.Max(numero1, numero2));
+            Console.WriteLine($"El minimo de los dos es: \t" + Math.Min(numero1, numero2));
 
             Console.Write("Presione una tecla...");
             Console.Read();
