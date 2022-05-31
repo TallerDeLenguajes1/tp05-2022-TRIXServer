@@ -1,60 +1,42 @@
 ﻿using System;
 
-namespace ejercicio2
+namespace ejercicio3
 {
     class Program
     {
         static void Main ()
         {
-            int operacion = 5;
-            do
-            {
-                int resultado = 0;
+            float numero = 0;
+            int numero1 = 0;
+            int numero2 = 0;
 
-                Console.Clear();
-                Console.WriteLine("1. SUMA");
-                Console.WriteLine("2. RESTA");
-                Console.WriteLine("3. MULTIPLICACION");
-                Console.WriteLine("4. DIVISION");
-                Console.WriteLine("0. SALIR");
-                Console.WriteLine("--");
-                Console.Write("Ingrese la opcion: ");
-                operacion = int.Parse(Console.ReadLine());
+            Console.Clear();
+            Console.WriteLine("--");
+            Console.Write("Ingrese un numero: ");
+            numero = float.Parse(Console.ReadLine());
 
-                if (operacion == 1 || operacion == 2 || operacion == 3 || operacion == 4)
-                {
-                    Console.Write("Ingrese el primer numero: ");
-                    int numero1 = int.Parse(Console.ReadLine());
-                    Console.Write("Ingrese el segundo numero: ");
-                    int numero2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("--");
+            Console.WriteLine($"El numero ingresado es \t{numero}");
+            Console.WriteLine($"El valor Absoluto es: \t" + Math.Abs(numero));
+            Console.WriteLine($"El cuadrado es: \t" + Math.Pow(numero, 2));
+            Console.WriteLine($"La raiz cuadrada es: \t" + Math.Sqrt(numero));
+            Console.WriteLine($"El seno es: \t\t" + Math.Sin(numero));
+            Console.WriteLine($"El coseno es: \t\t" + Math.Cos(numero));
+            Console.WriteLine($"La parte entera es: \t" + Math.Truncate(numero));
 
-                    if (operacion == 1)
-                    {
-                        resultado = numero1 + numero2;
+            Console.WriteLine("--");
+            Console.Write("Ingrese el primer numero: ");
+            numero1 = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el segundo numero: ");
+            numero2 = int.Parse(Console.ReadLine());
 
-                    }
-                    if (operacion == 2)
-                    {
-                        resultado = numero1 - numero2;
+            Console.WriteLine("--");
 
-                    }
-                    if (operacion == 3)
-                    {
-                        resultado = numero1 * numero2;
+            Console.WriteLine($"El maximo de los dos es: \t" + Math.Max(numero1, numero2));
+            Console.WriteLine($"El minimo de los dos es: \t" + Math.Min(numero1, numero2));
 
-                    }
-                    if (operacion == 4 && numero2 != 0)
-                    {
-                        resultado = numero1 / numero2;
-
-                    }
-                    Console.WriteLine("--");
-                    Console.WriteLine("El resultado es: " + resultado);
-                    Console.Write("Presione una tecla...");
-                    Console.Read();
-
-                }
-            } while (operacion != 0) ;
+            Console.Write("Presione una tecla...");
+            Console.Read();
         }
     }
 }
