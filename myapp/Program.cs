@@ -25,11 +25,10 @@ namespace ejercicio3
             Console.WriteLine($"La parte entera es: \t" + Math.Truncate(numero));
 
             Console.WriteLine("--");
-            Console.Write("Ingrese un numero: ");
-            Console.Read(numero1);
+            Console.Write("Ingrese el primer numero: ");
+            numero1 = int.Parse(Console.ReadLine());
             Console.Write("Ingrese el segundo numero: ");
-            Console.Read(numero2);
-
+            numero2 = int.Parse(Console.ReadLine());
 
             Console.Write("Presione una tecla...");
             Console.Read();
