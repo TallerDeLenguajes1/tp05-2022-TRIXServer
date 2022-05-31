@@ -30,6 +30,22 @@ namespace ejercicio3
             Console.Write("Ingrese el segundo numero: ");
             numero2 = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("--");
+
+            if (numero1 > numero2)
+            {
+                Console.WriteLine($"El mayor es: \t" + numero1);
+
+            }
+            else if (numero2 > numero1)
+            {
+                Console.WriteLine($"El mayor es: \t" + numero2);
+            }
+            else
+            {
+                Console.WriteLine("Los numeros son iguales");
+            }
+
             Console.Write("Presione una tecla...");
             Console.Read();
         }
