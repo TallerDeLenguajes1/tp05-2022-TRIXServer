@@ -7,6 +7,8 @@ namespace ejercicio3
         static void Main ()
         {
             float numero = 0;
+            int numero1 = 0;
+            int numero2 = 0;
 
             Console.Clear();
             Console.WriteLine("--");
@@ -21,6 +23,14 @@ namespace ejercicio3
             Console.WriteLine($"El seno es: \t\t" + Math.Sin(numero));
             Console.WriteLine($"El coseno es: \t\t" + Math.Cos(numero));
             Console.WriteLine($"La parte entera es: \t" + Math.Truncate(numero));
+
+            Console.WriteLine("--");
+            Console.Write("Ingrese un numero: ");
+            Console.Read(numero1);
+            Console.Write("Ingrese el segundo numero: ");
+            Console.Read(numero2);
+
+
             Console.Write("Presione una tecla...");
             Console.Read();
         }
