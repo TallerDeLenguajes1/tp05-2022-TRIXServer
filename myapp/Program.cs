@@ -11,7 +11,9 @@ namespace ejercicio4
             Console.WriteLine("--");
             Console.Write("Ingrese un texto: ");
             textoIngresado = Console.ReadLine();
-            Console.Write(textoIngresado);
+            Console.WriteLine(textoIngresado);
+            Console.Write("Presione una tecla");
+            Console.Read();
         }
     }
 }
