@@ -6,7 +6,12 @@ namespace ejercicio4
     {
         static void Main ()
         {
-
+            string textoIngresado;
+            Console.Clear();
+            Console.WriteLine("--");
+            Console.Write("Ingrese un texto: ");
+            textoIngresado = Console.ReadLine();
+            Console.Write(textoIngresado);
         }
     }
 }
