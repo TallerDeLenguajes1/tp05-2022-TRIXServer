@@ -21,7 +21,9 @@ namespace ejercicio4
             textoIngresadoDos = Console.ReadLine();
             Console.WriteLine("--");
             Console.WriteLine("El texto ingresado es: \t\t\t" + textoIngresadoDos);
-            Console.WriteLine("Ambos textos concatenados: \t\t" + textoIngresado + textoIngresadoDos);
+            Console.WriteLine("Ambos textos concatenados: \t\t" + textoIngresado + " " + textoIngresadoDos);
+
+            Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(3));
 
             Console.Write("Presione una tecla");
             Console.Read();
