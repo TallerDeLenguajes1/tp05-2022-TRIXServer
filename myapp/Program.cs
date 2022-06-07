@@ -25,6 +25,61 @@ namespace ejercicio4
 
             Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(3));
 
+            Console.WriteLine("--");
+
+            int operacion = 5;
+            do
+            {
+                int resultado = 0;
+
+                Console.WriteLine("1. SUMA");
+                Console.WriteLine("2. RESTA");
+                Console.WriteLine("3. MULTIPLICACION");
+                Console.WriteLine("4. DIVISION");
+                Console.WriteLine("0. SALIR");
+                Console.WriteLine("--");
+                Console.Write("Ingrese la opcion: ");
+                operacion = int.Parse(Console.ReadLine());
+
+                if (operacion == 1 || operacion == 2 || operacion == 3 || operacion == 4)
+                {
+                    Console.Write("Ingrese el primer numero: ");
+                    int numero1 = int.Parse(Console.ReadLine());
+                    Console.Write("Ingrese el segundo numero: ");
+                    int numero2 = int.Parse(Console.ReadLine());
+
+                    if (operacion == 1)
+                    {
+                        resultado = numero1 + numero2;
+                        Console.WriteLine("La suma de " + numero1 + " y " + numero2 + " es: " + resultado);
+
+                    }
+                    if (operacion == 2)
+                    {
+                        resultado = numero1 - numero2;
+                        Console.WriteLine("La resta de " + numero1 + " y " + numero2 + " es: ")
+
+                    }
+                    if (operacion == 3)
+                    {
+                        resultado = numero1 * numero2;
+
+                    }
+                    if (operacion == 4 && numero2 != 0)
+                    {
+                        resultado = numero1 / numero2;
+
+                    }
+                    Console.WriteLine("--");
+                    Console.Write("Presione una tecla...");
+                    Console.Read();
+
+                }
+            } while (operacion != 0) ;
+
+
+
+
             Console.Write("Presione una tecla");
             Console.Read();
         }
