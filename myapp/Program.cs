@@ -6,24 +6,23 @@ namespace ejercicio4
     {
         static void Main ()
         {
-            string textoIngresado;
-            string textoIngresadoDos;
+
             Console.Clear();
             Console.WriteLine("--");
             Console.Write("Ingrese un texto: ");
-            textoIngresado = Console.ReadLine();
+            string textoIngresado = Console.ReadLine();
             Console.WriteLine("--");
             Console.WriteLine("El texto ingresado es: \t\t\t" + textoIngresado);
             Console.WriteLine("El primer caracter: \t\t\t" + textoIngresado[0]);
             Console.WriteLine("El largo de la cadena ingresada es: \t" + textoIngresado.Length);
             Console.WriteLine("--");
             Console.Write("Ingrese un segundo texto: ");
-            textoIngresadoDos = Console.ReadLine();
+            string textoIngresadoDos = Console.ReadLine();
             Console.WriteLine("--");
             Console.WriteLine("El texto ingresado es: \t\t\t" + textoIngresadoDos);
             Console.WriteLine("Ambos textos concatenados: \t\t" + textoIngresado + " " + textoIngresadoDos);
 
-            Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(3));
+            Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(textoIngresado.Length - 1));
 
             Console.WriteLine("--");
 
@@ -86,7 +85,12 @@ namespace ejercicio4
 
             }
             Console.WriteLine();
-            
+            Console.WriteLine("--");
+            Console.Write("Ingrese una palabra a buscar dentro de la primera cadena: ");
+            string palabraABuscar = Console.ReadLine();
+            Console.WriteLine($"La palabra \"{palabraABuscar}\" esta dentro de la primera cadena: " + textoIngresado.Contains(palabraABuscar));
+            Console.WriteLine("--");
+
             Console.Write("Presione una tecla");
             Console.Read();
 
