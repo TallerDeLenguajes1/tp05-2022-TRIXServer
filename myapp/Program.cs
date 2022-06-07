@@ -77,9 +77,21 @@ namespace ejercicio4
                 }
             } while (operacion != 0) ;
 
+            Console.WriteLine("--");
+
+            Console.Write("Recorrido de la primera cadena con foreach: ");
+            foreach (char letra in textoIngresado)
+            {
+                Console.Write(letra + " ");
+
+            }
+            Console.WriteLine();
+            
             Console.Write("Presione una tecla");
             Console.Read();
-            
+
+
+
         }
     }
 }
