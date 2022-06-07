@@ -110,12 +110,33 @@ namespace ejercicio4
             Console.WriteLine();
             Console.WriteLine("--");
 
-            
+            Console.Write("Ingrese la ecuacion a resolver: ");
+            string ecuacion = Console.ReadLine();
+            string[] partes = ecuacion.Split('+', '-', '*', '/');
+            float resultadoDos = 0;
 
+            if (ecuacion.Contains("+"))
+            {
+                resultadoDos = float.Parse(partes[0]) + float.Parse(partes[1]);
+            }
+            if (ecuacion.Contains("-"))
+            {
+                resultadoDos = float.Parse(partes[0]) - float.Parse(partes[1]);
+            }
+            if (ecuacion.Contains("*"))
+            {
+                resultadoDos = float.Parse(partes[0]) * float.Parse(partes[1]);
+            }
+            if (ecuacion.Contains("/") && float.Parse(partes[1]) != 0)
+            {
+                resultadoDos = float.Parse(partes[0]) / float.Parse(partes[1]);
+            }
+
+            Console.WriteLine("El resultado es: " + resultadoDos);
+            
+            Console.WriteLine("--");
             Console.Write("Presione una tecla");
             Console.Read();
-
-
 
         }
     }
