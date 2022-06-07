@@ -57,31 +57,29 @@ namespace ejercicio4
                     if (operacion == 2)
                     {
                         resultado = numero1 - numero2;
-                        Console.WriteLine("La resta de " + numero1 + " y " + numero2 + " es: ")
+                        Console.WriteLine("La resta de " + numero1 + " y " + numero2 + " es: " + resultado);
 
                     }
                     if (operacion == 3)
                     {
                         resultado = numero1 * numero2;
+                        Console.WriteLine("La multiplicacion de " + numero1 + " y " + numero2 + " es: " + resultado);
 
                     }
                     if (operacion == 4 && numero2 != 0)
                     {
                         resultado = numero1 / numero2;
+                        Console.WriteLine("La division de " + numero1 + " y " + numero2 + " es: " + resultado);
 
                     }
                     Console.WriteLine("--");
-                    Console.Write("Presione una tecla...");
-                    Console.Read();
 
                 }
             } while (operacion != 0) ;
 
-
-
-
             Console.Write("Presione una tecla");
             Console.Read();
+            
         }
     }
 }
