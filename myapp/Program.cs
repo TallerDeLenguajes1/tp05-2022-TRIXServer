@@ -22,7 +22,7 @@ namespace ejercicio4
             Console.WriteLine("El texto ingresado es: \t\t\t" + textoIngresadoDos);
             Console.WriteLine("Ambos textos concatenados: \t\t" + textoIngresado + " " + textoIngresadoDos);
 
-            Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(textoIngresado.Length - 1));
+            Console.WriteLine("Una subcadena de la segunda cadena ingresada es: " + textoIngresadoDos.Substring(textoIngresadoDos.Length - 1));
 
             Console.WriteLine("--");
 
@@ -89,7 +89,28 @@ namespace ejercicio4
             Console.Write("Ingrese una palabra a buscar dentro de la primera cadena: ");
             string palabraABuscar = Console.ReadLine();
             Console.WriteLine($"La palabra \"{palabraABuscar}\" esta dentro de la primera cadena: " + textoIngresado.Contains(palabraABuscar));
+
             Console.WriteLine("--");
+            Console.WriteLine("La primera cadena tranformada a mayusculas: " + textoIngresado.ToUpper());
+
+            Console.WriteLine("--");
+            Console.WriteLine("La primera cadena transformada a minusculas: " + textoIngresado.ToLower());
+
+            Console.WriteLine("--");
+            Console.WriteLine($"La primera cadena es igual a la segunda cadena: " + String.Equals(textoIngresado, textoIngresadoDos));
+
+            Console.WriteLine("--");
+            Console.Write("Ingrese una cadena separada por \".\" en lugar de espacio: ");
+            string cadenaRara = Console.ReadLine();
+            string[] cadenaPartida = cadenaRara.Split(".");
+            foreach (string parte in cadenaPartida)
+            {
+                Console.Write(parte + " ");
+            }
+            Console.WriteLine();
+            Console.WriteLine("--");
+
+            
 
             Console.Write("Presione una tecla");
             Console.Read();
